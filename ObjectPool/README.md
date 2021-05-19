@@ -1,13 +1,5 @@
 # Wzorce: Pule obliczeń
 
-| Termin oddania | Punkty     |
-|----------------|:-----------|
-| 25.04.2021 23:00|  10       |
-
---- 
-Przekroczenie terminu o **n** zajęć wiąże się z karą:
-- punkty uzyskania za realizację zadania są dzielone przez **2<sup>n</sup>**.
-
 --- 
 Utworzyć trzy pule obiektów reprezentujących trzy rodzaje konfigurowalnych 
    i skomplikowanych obliczeń podstawowych. 
