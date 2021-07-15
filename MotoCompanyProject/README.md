@@ -1,15 +1,3 @@
-# Zadanie: Projekt końcowy
-
-| Termin oddania | Punkty     |
-|----------------|:-----------|
-| 10.06.2021  23:00   |    20      |
-
---- 
-Przekroczenie terminu o **n** zajęć wiąże się z karą:
-- punkty uzyskanie za realizację zadania są dzielone przez **2<sup>n</sup>**.
-
---- 
-
 W ramach projektu końcowego należy przedstawić rozwiązanie dowolnego problemu, 
 w którym w nietrywialny sposób zastosowano po dwa wzorce 
 projektowe z następujących grup:
