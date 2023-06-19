@@ -1,13 +1,43 @@
-# DesignPatterns
-This is a repository of design pattern projects written in Java for university classes.
+#Projekt Przedsiębiorstwa Samochodowego.
+
+Projekt ten wykorzystuje następujące wzorce projektowe:
+
+##KREACYJNE
+
+-Fabryki - Do tworzenia obiektów klasy nadrzędnej Wehikuł.
+
+-abstrakcyjne
+
+-korzystające z reflekcji
+
+-korzystające z interfejsu funkcyjnego supplier
+
+-korzystające z metody wytwórczej
+
+-Singleton - Prezes Firmy, Singleton typu Double Lock Checking
+
+-Budowniczy - Wbudowany w odpowiednie klasy obiektów Wehikuł
+
+POŁĄCZENIE: Wzorzec BUDOWNICZY został wykorzystywany do tworzenia obiektów w FABRYKACH.
 
 
-## References:
-1. E. Gamma, R. Helm, R. Johnson, J. Vlissides. Design Patterns. Addison-Wesely, 1995.
-2. E. Freeman, E. Freeman, B. Bates, K. Sierra. Head First Design Patterns, O.Reilly Media Inc., 2004.
-3. M. Fowler. Patterns of Enterprise Application Architecture. Addison-Wesely, 2003.
-4. Web page: [Object Oriented Design](http://www.oodesign.com/).
-5. Web page: [martinfowler.com](http://www.martinfowler.com/).
-6. Web page: [design patterns @ dofactory.com](http://www.dofactory.com/net/design-patterns).
-7. Web page: [Projektowanie systemów komputerowych: notatki w internecie](http://brasil.cel.agh.edu.pl/~09sbfraczek/).
-8. Web page: [Java Design Patterns – Example Tutorial](http://www.journaldev.com/1827/java-design-patterns-example-tutorial).
+##STRUKTURALNE
+
+-Kompozyty - do stworzenia hierarchii pracowników oraz do umożliwienia występowania zespołów oraz prowadzących grupy.
+
+-Dekorator - zastosowałem wzorzec dekorator w kilku miejschach
+
+1) Restauracja. Występują składniki bazowe dań takich jak Danie Główne bądź Deser. Dekorator służy do stworzenia posiłku poprzez dodawanie do elementu głównego kolejnych dodatków.
+
+2) Fabryka. Dekoracja na fabrykach daje nam kolejne możliwości oferowane przez fabryki, taki jak: zmiana pojemności silnika wehikułu albo przemalowanie go.
+
+POŁĄCZENIE - Wzorzec DEKORATOR został użyty również na elementach Kompozytu. Umożliwiają przerabianie pracowników z brakiem możliwości kierowania zespołem na takich, co te umiejętności posiadają. Również możliwe jest działanie w drugą stronę, czyli pozbawienie pracownika takich kwalifikacji.
+
+
+##CZYNNOŚCIOWE
+
+-WIZYTOR - służą do zwiększania bądź zmniejszania wynagrodzenia pracowników oraz regulowania ich ilości dni wolnych.
+
+-OBSERWATOR - Wzorzec obserwator występuje w Klasie Księgowa. Obiekty Księgowej służą do kontrolowania zmian w płacach bądź ilości dni wolnych pracowników. Obserwują zmiany.
+
+POŁĄCZENIE: Wzorzec Wizytator został połączony z wzorcem Obserwator. Przy każdej wizycie, która coś zmienia w polach pracowników, księgowa jest powiadamiana o tych zmianach i adekwatnie koryguje informacje, które posiada o pracownikach.
